@@ -25,6 +25,10 @@ Client module is consists of one react application. This is an SPA, which can be
 - webpack
 - node
 
+### high-level overview of state approach
+![image](https://user-images.githubusercontent.com/11064696/66573844-91b78280-eb73-11e9-9973-645b80985f07.png)
+As you can see all components using the same state, so any component can get any application state value it needs. Also, components have read-only access to state, they can update it with actions. All components have access to the same actions, so if somewhere action was used, it can be easily reused in any other component.
+
 ### Project structure
 ![image](https://user-images.githubusercontent.com/11064696/66563604-65ddd200-eb5e-11e9-8d95-efd1c8fc18cf.png)
 
